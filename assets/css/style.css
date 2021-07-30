@@ -4266,7 +4266,7 @@ left:260px;
   display: block;
   opacity: 0;
   align-self: flex-start;
-  transition: all 0.2s linear;
+  /* transition: all 0.2s linear; */
 }
 .pj-section:hover .plus-icon{
   opacity: 1;
