@@ -1,0 +1,48 @@
+@font-face {
+font-family: 'MetaPro-Bold';
+font-style: normal;
+font-weight: normal;
+src: local('MetaPro-Bold'), url('../fonts/MetaPro-Bold.otf') format('otf');
+}
+
+@font-face {
+font-family: 'MetaPro-BoldItalic';
+font-style: normal;
+font-weight: normal;
+src: local('MetaPro-BoldItalic'), url('../fonts/MetaPro-BoldItalic.otf') format('otf');
+}
+
+@font-face {
+font-family: 'MetaPro-Book';
+font-style: normal;
+font-weight: normal;
+src: local('MetaPro-Book'), url('../fonts/MetaPro-Book.otf') format('otf');
+}
+
+@font-face {
+font-family: 'MetaPro-BookItalic';
+font-style: normal;
+font-weight: normal;
+src: local('MetaPro-BookItalic'), url('../fonts/MetaPro-BookItalic.otf') format('otf');
+}
+
+@font-face {
+font-family: 'SourceSerifPro-Black';
+font-style: normal;
+font-weight: normal;
+src: local('SourceSerifPro-Black'), url('../fonts/SourceSerifPro-Black.ttf') format('ttf');
+}
+
+@font-face {
+font-family: 'SourceSerifPro-Regular';
+font-style: normal;
+font-weight: normal;
+src: local('SourceSerifPro-Black'), url('../fonts/SourceSerifPro-Black.ttf') format('ttf');
+}
+
+@font-face {
+font-family: 'SourceSerifPro-Semibold';
+font-style: normal;
+font-weight: normal;
+src: local('SourceSerifPro-Semibold'), url('../fonts/SourceSerifPro-Semibold.ttf') format('ttf');
+}
