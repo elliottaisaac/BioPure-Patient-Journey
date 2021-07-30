@@ -4522,7 +4522,7 @@ left:260px;
 
 @media screen and (max-width: 999px){
   .patient-journey{
-    min-height: 1300px;
+    /* min-height: 1300px; */
   }
   .pj-grid{
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
