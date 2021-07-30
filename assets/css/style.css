@@ -4171,8 +4171,7 @@ left:260px;
 
 
 .patient-journey{
-    /* min-height: 1500px; */
-    margin-bottom: 200px;
+    min-height: 1500px;
     margin-top: 32px;
     background-image: linear-gradient(to bottom, #fff 33%, ghostwhite 100%);
 }
@@ -4257,7 +4256,7 @@ left:260px;
   position: relative;
   transform: translateY(60px);
   z-index: 3;
-  background-image: linear-gradient(to right, #009444 6.25%, #fae200 18.75%, #ee8922 31.25%, #e12727 43.75%, #de1b83 56.25%, #935aa5 68.75%, #004987 81.25%, #5eb3e4 93.75%, #009444 106.25%);
+  background-image: linear-gradient(to right, #009444 6.25%, #fae200 18.75%, #ee8922 31.25%, #e12727 43.75%, #de1b83 56.25%, #935aa5 68.75%, #1e2859 81.25%, #049fda 93.75%, #009444 106.25%);
 }
 
 .plus-icon{
@@ -4522,7 +4521,7 @@ left:260px;
 
 @media screen and (max-width: 999px){
   .patient-journey{
-    /* min-height: 1300px; */
+    min-height: 1300px;
   }
   .pj-grid{
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -4666,7 +4665,6 @@ left:260px;
     position: static !important;
     transform: none !important;
     margin-bottom: 16px;
-    margin-top: 48px;
   }
   .pj-section{
     background-color: rgba(248, 248, 255, .25) !important;
