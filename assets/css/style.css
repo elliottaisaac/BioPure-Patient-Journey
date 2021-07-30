@@ -4256,7 +4256,8 @@ left:260px;
   position: relative;
   transform: translateY(60px);
   z-index: 3;
-  background-image: linear-gradient(to right, #009444 6.25%, #fae200 18.75%, #ee8922 31.25%, #e12727 43.75%, #de1b83 56.25%, #935aa5 68.75%, #1e2859 81.25%, #049fda 93.75%, #009444 106.25%);
+  background-image: linear-gradient(to right, #2c9942 6.25%, #fce200 18.75%, #f18a00 31.25%, #e12518
+   43.75%, #df1683 56.25%, #a25eb5 68.75%, #1e2859 81.25%, #049fda 93.75%, #2c9942 106.25%);
 }
 
 .plus-icon{
