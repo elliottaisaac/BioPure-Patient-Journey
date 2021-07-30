@@ -142,7 +142,7 @@ function RenderInternalContent(category){
         snc[2].innerHTML = "← Previous";
         snc[3].innerHTML = "Next →";
         grid.classList.add("grayscale-bg");
-        qs(".patient-journey").style.marginBottom = "300px";
+        qs(".patient-journey").style.paddingBottom = "300px";
     }
     ael(snc[0], "click", () =>{ 
        if(category == 1) localStorage.setItem("OPENCAT", 7);
@@ -195,7 +195,7 @@ function CloseCategory(){
         qs(".open-section").style.borderColor = "rgba(0, 160, 223, 0.5)";
         for(let i = 0; i < sections.length; i++) sections[i].style.borderColor = "rgba(0, 160, 223, 0.5)";
         grid.classList.remove("grayscale-bg");
-        qs(".patient-journey").style.marginBottom = "220px";
+        qs(".patient-journey").style.paddingBottom = "220px";
     }
     setTimeout( () => {if(qs(".open-section")) qs(".open-section").classList.remove("open-section") }, 200);
     sections.forEach(s => { s.style.background = "initial"; });

@@ -4173,7 +4173,7 @@ left:260px;
 .patient-journey{
     /* min-height: 1500px; */
     margin-top: 32px;
-    margin-bottom: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(to bottom, #fff 33%, ghostwhite 100%);
 }
 
