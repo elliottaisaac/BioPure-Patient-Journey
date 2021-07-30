@@ -220,11 +220,11 @@ a:hover{
 }
 
 
-.bg-content h1, .explore-content h1, .liposomal-content h1{
+.pj-content h1, .explore-content h1, .liposomal-content h1{
   font-size:40px;
 
 }
-.bg-content p, .explore-content p{
+.pj-content p, .explore-content p{
   padding-top:20px;
   font-size:16px;
   line-height:30px;
@@ -233,7 +233,7 @@ a:hover{
   margin-right: auto;
 
 }
-  .bg-content button,.explore-content  button, .liposomal-content  button{
+  .pj-content button,.explore-content  button, .liposomal-content  button{
      padding:5px 20px 5px 20px;
      border: none;
      border-radius: 30px;
@@ -259,7 +259,7 @@ a:hover{
   }
 
 
-.bg-content{
+.pj-content{
   position: relative;
   z-index: 1;
   top:50px;
@@ -2136,18 +2136,18 @@ left:260px;
     }
 
 
-    .bg-content h1 ,  .explore-content  h1, .quality-banner h1,  .liposomal-content h1{
+    .pj-content h1 ,  .explore-content  h1, .quality-banner h1,  .liposomal-content h1{
       font-size:40px;
       width:100%;
     }
-    .bg-content p , .explore-content p, .liposomal-content p, .content-2 p {
+    .pj-content p , .explore-content p, .liposomal-content p, .content-2 p {
       font-size:18px;
       line-height:25px;
       width:80%;
       padding:0 !important;
 
     }
-    .bg-content{
+    .pj-content{
       transform:translate(50%, 50%) ;
       display: block;
       position: relative;
@@ -2157,7 +2157,7 @@ left:260px;
       padding:20 !important;
     }
 
-      .bg-content button {
+      .pj-content button {
          padding:10px 50px 10px 50px;
          border: none;
          border-radius: 30px;
@@ -4663,7 +4663,7 @@ left:260px;
 } 
 
 @media screen and (max-width: 600px){
-  #pj-page .bg-content {
+  #pj-page .pj-content {
     position: static !important;
     transform: none !important;
     margin-bottom: 16px;
@@ -4689,6 +4689,7 @@ left:260px;
 
   .patient-journey{
     margin-top: 0;
+    margin-bottom: 220px;
   }
   .pj-grid{
     margin-top: 0;

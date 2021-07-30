@@ -78,7 +78,6 @@ function ActivateGrid(){
                 if(!isMobile) sections[index].style.width = `${vw - (60*(sections.length - 1))}px`;
                 else{
                     sections[index].style.height = `${GetDimensions(sections[index].children[2]).height}px`;
-                    qs("footer").style.marginTop = `${GetDimensions(sections[index].children[2]).height - 390}px`;
                     if(sections[i].children[2]) sections[i].children[2].style.borderLeft = `6px solid ${gradient[i]}`; 
                 }
                 setTimeout( () => { if(qs(".pj-internal-content")) qs(".pj-internal-content").classList.add("fade-in"); }, 2);
@@ -143,6 +142,7 @@ function RenderInternalContent(category){
         snc[2].innerHTML = "← Previous";
         snc[3].innerHTML = "Next →";
         grid.classList.add("grayscale-bg");
+        qs(".patient-journey").style.marginBottom = "300px";
     }
     ael(snc[0], "click", () =>{ 
        if(category == 1) localStorage.setItem("OPENCAT", 7);
@@ -192,10 +192,10 @@ function CloseCategory(){
     if(qs(".pj-internal-content")) qs(".pj-internal-content").remove();
     if(isMobile){
         qs(".open-section .plus-icon").style.display = "block";
-        qs("footer").style.marginTop = "0px";
         qs(".open-section").style.borderColor = "rgba(0, 160, 223, 0.5)";
         for(let i = 0; i < sections.length; i++) sections[i].style.borderColor = "rgba(0, 160, 223, 0.5)";
         grid.classList.remove("grayscale-bg");
+        qs(".patient-journey").style.marginBottom = "220px";
     }
     setTimeout( () => {if(qs(".open-section")) qs(".open-section").classList.remove("open-section") }, 200);
     sections.forEach(s => { s.style.background = "initial"; });
