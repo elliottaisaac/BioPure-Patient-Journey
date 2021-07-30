@@ -54,7 +54,7 @@ function ActivateGrid(){
                     if(!isMobile) sections[a].style.width = "60px";
                     else sections[a].style.height = "60px";
                 }
-                let gradient = ["#009444 ","#fae200 ","#ee8922 ","#e12727 ","#de1b83 ","#935aa5 ","#1e2859 ","#049fda "];
+                let gradient = ["#2c9942 ","#fce200 ","#f18a00 ","#e12518 ","#df1683 ","#a25eb5 ","#004987 ","#049fda "];
                 let gradientCountingUp = 30;
                 if(isMobile) gradientString = gradientString;
                 else{
@@ -70,7 +70,7 @@ function ActivateGrid(){
                     }
                     gradientString = "linear-gradient(to right, ";
                     for(let m = 0; m < gradient.length; m++) gradientString += `${gradient[m]}, `;
-                    gradientString += "#009444 103.125%)";
+                    gradientString += "#2c9942 103.125%)";
                 }
                 qs(".pj-gradient").style.background = gradientString;
                 sections[i].style.borderColor = "rgba(0, 160, 223, 0.5)";
@@ -154,7 +154,7 @@ function RenderInternalContent(category){
        else localStorage.setItem("OPENCAT", category);
        location.reload();
     });
-    let g = ["#009444","#fae200","#ee8922","#e12727","#de1b83","#935aa5","#1e2859","#049fda"];
+    let g = ["#2c9942","#fce200","#f18a00","#e12518","#df1683","#a25eb5","#004987","#049fda"];
     let rbg = hexToRgb(g[category - 1]);
     let rbga = `rbga(${rbg.r},${rbg.g},${rbg.b},0.5)`;
     sections.forEach(s => {
@@ -183,7 +183,7 @@ function hexToRgb(hex) {
 
 function CloseCategory(){
     grid.classList.remove("vertical-text");
-    qs(".pj-gradient").style.background = "linear-gradient(to right, #009444 6.25%, #fae200 18.75%, #ee8922 31.25%, #e12727 43.75%, #de1b83 56.25%, #935aa5 68.75%, #1e2859 81.25%, #049fda 93.75%, #009444 106.25%)";
+    qs(".pj-gradient").style.background = "linear-gradient(to right, #2c9942 6.25%, #fce200 18.75%, #f18a00 31.25%, #e12518 43.75%, #df1683 56.25%, #a25eb5 68.75%, #004987 81.25%, #049fda 93.75%, #2c9942 106.25%)";
     if(!isMobile) for(let i = 0; i < sections.length; i++){sections[i].style.width = `initial !important`; }
     //else for(i = 0; i < sections.length; i++) sections[i].style.background = "linear-gradient(to right, rgba(255, 255, 255, 1.0) 0%, rgba(255, 255, 255, 0.5) 75%, rgba(255, 255, 255, 0.0) 100%);";
     if(!isMobile) grid.style.gridTemplateColumns = "1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr";
