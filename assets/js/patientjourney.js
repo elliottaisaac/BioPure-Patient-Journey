@@ -2,9 +2,7 @@
 
 const vid = qs(".pj-video video");
 const grid = qs(".pj-grid");
-const sections = qsa(".pj-section");
-let isMobile = undefined;
-let vw, vh;
+let vw, vh, isMobile, sections;
 
 function GetViewPortSize(){
     vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
@@ -130,10 +128,10 @@ function RenderInternalContent(category){
     snc.push(qsa(".pj-internal-subnav div")[qsa(".pj-internal-subnav div").length - 1]);
     snc[0].setAttribute("tabindex", "0");
     snc[1].setAttribute("tabindex", "0");
-    if(category == 1) snc[0].innerHTML = "← " + fields.categories[fields.categories.length - 1].title;
-    else snc[0].innerHTML = "← " + fields.categories[category - 2].title;
-    if(category >= fields.categories.length - 1) snc[1].innerHTML = fields.categories[0].title + " →";
-    else snc[1].innerHTML = fields.categories[category].title + " →";
+    if(category == 1) snc[0].innerHTML = "&#8592; " + fields.categories[fields.categories.length - 1].title;
+    else snc[0].innerHTML = "&#8592; " + fields.categories[category - 2].title;
+    if(category >= fields.categories.length - 1) snc[1].innerHTML = fields.categories[0].title + " &#8594;";
+    else snc[1].innerHTML = fields.categories[category].title + " &#8594;";
     snc[2].innerHTML = "Previous";
     snc[3].innerHTML = "Next";
     if(isMobile){
@@ -220,6 +218,13 @@ function CheckLocalStorage(){
 }
 
 function InitializePatientJourney(){
+    for(i=0; i < 8; i++){
+        let pjs = NewElement("div", ["pj-section"], false);
+        pjs.setAttribute("data-idx", i + 1);
+        grid.appendChild(pjs);
+    }
+    sections = qsa(".pj-section");
+    isMobile = undefined;
     ael(window, "resize", () => {
         GetViewPortSize();
         ResizeGrid();
