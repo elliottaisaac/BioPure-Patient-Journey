@@ -1,3 +1,7 @@
+@import url(font.css);
+@import url(bootstrap.min.css);
+@import url(all.min.css);
+
 :root {
   --primary-color: #053E81;
   --secondary-color:#4EB7F2;
