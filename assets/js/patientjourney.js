@@ -52,9 +52,9 @@ function ActivateGrid(){
                     else sections[a].style.height = "60px";
                 }
                 let gradient = ["#2c9942 ","#fce200 ","#f18a00 ","#e12518 ","#df1683 ","#a25eb5 ","#004987 ","#5eb3e4 "];
-                let gradientCountingUp = 30;
                 if(isMobile) gradientString = gradientString;
                 else{
+                    let gradientCountingUp = 30;
                     for(let k = 0; k <= index; k++){
                         gradient[k] = `${gradient[k]}${gradientCountingUp}px`;
                         if(k == index) gradient[k] += `, ${gradient[k].substring(0,7)} `;
