@@ -153,7 +153,12 @@ function RenderInternalContent(category){
        location.reload();
     });
     let g = ["#2c9942","#fce200","#f18a00","#e12518","#df1683","#a25eb5","#004987","#5eb3e4"];
-    let rbg = hexToRgb(g[category - 1]);
+    let hextorbg = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(g[category - 1]);
+    let rbg = hextorbg ? {
+        r: parseInt(hextorbg[1], 16),
+        g: parseInt(hextorbg[2], 16),
+        b: parseInt(hextorbg[3], 16)
+      } : null;
     let rbga = `rbga(${rbg.r},${rbg.g},${rbg.b},0.5)`;
     sections.forEach(s => {
         if(!isMobile){
@@ -168,15 +173,6 @@ function RenderInternalContent(category){
         if(s != c)s.style.background = `linear-gradient(to ${dir}, rgba(${rbg.r},${rbg.g},${rbg.b},0.375) 0%, rgba(${rbg.r},${rbg.g},${rbg.b},0.0) 50%`; 
         else s.style.background = "rgba(255,255,255,0.99)";
     });}, 100);
-}
-
-function hexToRgb(hex) {
-    let result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-    return result ? {
-      r: parseInt(result[1], 16),
-      g: parseInt(result[2], 16),
-      b: parseInt(result[3], 16)
-    } : null;
 }
 
 function CloseCategory(){
