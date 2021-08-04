@@ -42,8 +42,7 @@ function ActivateGrid(){
         gridTemplate += "auto";
         for(let k = i + 1; k < sections.length; k++) gridTemplate += " 60px";
         ael(sections[i], "click", () => {
-            if(sections[i].classList.contains("open-section")) return;
-            else{
+            if(!sections[i].classList.contains("open-section")){
                 sections.forEach(s => s.classList.remove("open-section"));
                 if(!isMobile) grid.style.gridTemplateColumns = gridTemplate;
                 if(!isMobile) grid.classList.add("vertical-text");
