@@ -1,4 +1,4 @@
-// Elliott's JS utility functions
+// Utility functions
 
 function log(x){
     console.log(x);

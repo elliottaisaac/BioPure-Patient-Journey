@@ -1,4 +1,6 @@
-//Patient Journey scripts
+// Patient Journey scripts 
+
+// written by elliott@glantz.net 
 
 const vid = qs(".pj-video video");
 const grid = qs(".pj-grid");
