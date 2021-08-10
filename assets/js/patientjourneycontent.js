@@ -110,7 +110,7 @@ const fields = {
             headline2: "Foundational incididunt",
             paragraphText2: "Rem ipsum dolor sit amet, consectetur adipiscing elit, s",
             image: "assets/img/test8.jpg",
-            sidebarText: "Blahhhhh Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            sidebarText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             buttonText: "Shop all",
             buttonLink: "https://biopurecustomer.myshopify.com/"
         }
