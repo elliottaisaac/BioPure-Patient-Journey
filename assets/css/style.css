@@ -385,7 +385,7 @@
   }
 }
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1200px){
   *{
     border-bottom-color: rgba(0, 160, 223, 0.2) !important;
   }
@@ -394,7 +394,7 @@
   }
 }
 
-@media screen and (max-width: 999px){
+@media screen and (max-width: 1199px){
   .patient-journey{
     /* min-height: 1300px; */
   }

@@ -10,7 +10,7 @@ function GetViewPortSize(){
     vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
     vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
     let prev = isMobile;
-    if(vw < 1000) isMobile = true;
+    if(vw < 1200) isMobile = true;
     else isMobile = false;
     if(prev != undefined && prev != isMobile) location.reload();
 }
