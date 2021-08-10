@@ -137,6 +137,8 @@ function RenderInternalContent(category){
     else snc[1].innerHTML = fields.categories[category].title + " &#8594;";
     snc[2].innerHTML = "Previous";
     snc[3].innerHTML = "Next";
+    ael(snc[2], "click", () => { snc[0].click(); });
+    ael(snc[3], "click", () => { snc[1].click(); });
     if(isMobile){
         snc[0].innerHTML = snc[0].innerHTML.substring(2); 
         snc[1].innerHTML = snc[1].innerHTML.substring(0, snc[1].innerHTML.length - 1);
