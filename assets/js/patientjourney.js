@@ -199,6 +199,7 @@ function CloseCategory(){
 }
 
 function FillInitialContent(){
+    document.querySelector('.pj-video video').playbackRate = 0.6;
     if(qs(".pj-headline")) qs(".pj-headline").innerHTML = fields.headline;
     if(qs(".pj-introtext")) qs(".pj-introtext").innerHTML = fields.introText;
     for(let i=0; i<sections.length; i++) sections[i].children[0].innerHTML = fields.categories[i].title;
