@@ -3,6 +3,10 @@
 
 @import url(site-styles.css);
 
+.pj-introtext{
+  font-family: 'Open Sans', sans-serif;
+}
+
 .patient-journey{
     /* min-height: 1500px; */
     margin-top: 32px;
@@ -145,7 +149,7 @@
 }
 
 .pj-internal-content p{
-  font-family: ff-meta-correspondence-web-p, sans-serif;
+  font-family: 'Open Sans', sans-serif; /*ff-meta-correspondence-web-p, sans-serif;*/
 }
 
 .pj-internal-sidebar{
@@ -164,7 +168,7 @@
   object-fit: contain;
 }
 
-.pj-internal-sidebar a{
+.pj-internal-sidebar a:not(.pj-internal-subnav a){
   background-color: #00A0DF;
   padding: 12px;
   width: 150px;
@@ -182,6 +186,7 @@
   cursor: pointer;
   pointer-events: all;
   color: #fff !important;
+  font-family: 'Open Sans', sans-serif;
 }
 .pj-internal-sidebar a:hover{
   color: #fff;
@@ -232,7 +237,7 @@
   font-weight: bold;
   text-transform: capitalize;
   margin-bottom: 12px;
-  font-family: ff-meta-correspondence-web-p, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .pj-internal-subnav{
@@ -470,7 +475,7 @@
     height: unset;
   }
   
-  .pj-internal-sidebar *{
+  .pj-internal-sidebar *:not(.pj-internal-subnav){
     display: block;
   }
 

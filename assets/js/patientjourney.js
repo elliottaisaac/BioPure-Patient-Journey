@@ -1,6 +1,6 @@
 // Patient Journey scripts 
 
-// written by elliott@glantz.net 
+// author: elliott@glantz.net 
 
 const vid = qs(".pj-video video");
 const grid = qs(".pj-grid");
@@ -118,7 +118,9 @@ function RenderInternalContent(category){
     qs(".close-section-btn").innerHTML = closeButton;
     qs(".close-section-btn").setAttribute("tabindex", "0");
     ael(qs(".close-section-btn"), "click", CloseCategory);
-    let subNav = NewElement("div", ["pj-internal-subnav"], qs(".pj-internal-main p:nth-of-type(2)")); let r;
+    let subNav, r;
+    if(!isMobile) subNav = NewElement("div", ["pj-internal-subnav"], qs(".pj-internal-main p:nth-of-type(2)"));
+    else subNav = NewElement("div", ["pj-internal-subnav"], qs(".pj-internal-sidebar a"));
     for(v=0;v<4;v++){
         if(v<2) r = NewElement("a", [], false);
         else r = NewElement("div", [], false);
@@ -131,7 +133,7 @@ function RenderInternalContent(category){
     snc[1].setAttribute("tabindex", "0");
     if(category == 1) snc[0].innerHTML = "&#8592; " + fields.categories[fields.categories.length - 1].title;
     else snc[0].innerHTML = "&#8592; " + fields.categories[category - 2].title;
-    if(category >= fields.categories.length - 1) snc[1].innerHTML = fields.categories[0].title + " &#8594;";
+    if(category >= fields.categories.length) snc[1].innerHTML = fields.categories[0].title + " &#8594;";
     else snc[1].innerHTML = fields.categories[category].title + " &#8594;";
     snc[2].innerHTML = "Previous";
     snc[3].innerHTML = "Next";

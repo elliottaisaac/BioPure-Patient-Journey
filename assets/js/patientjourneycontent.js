@@ -8,7 +8,7 @@ const fields = {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore. All page content is populated from <a href='assets/js/patientjourneycontent.js' target='blank'>this file</a>",
 
     video: //must be mp4
-    "assets/videos/_wave_.mp4",
+    "assets/videos/WAVE-60.mp4",
 
     categories: [
         {
@@ -41,11 +41,11 @@ const fields = {
             title: "Environmental Support",
             icon: "assets/icons/Icon_Graphics_Environmental_Support.png",
             headline1: "Environmental headline",
-            paragraphText1: "I'm paragraph text, edit me and all other content in the assets/js/patientjourneycontent.js file. ed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            paragraphText1: "I'm paragraph text, edit me and all other content in the assets/js/patientjourneycontent.js file. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             headline2: "etox Support internal headli ipsum",
             paragraphText2: "R adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatr adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             image: "assets/img/testing.png",
-            sidebarText:  "Environmental SupportEnvironmental Support Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            sidebarText:  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             buttonText: "Shop all",
             buttonLink: "https://biopurecustomer.myshopify.com/"
         },
@@ -115,6 +115,6 @@ const fields = {
             buttonLink: "https://biopurecustomer.myshopify.com/"
         }
     ]
-}
+};
 
 FillInitialContent();
