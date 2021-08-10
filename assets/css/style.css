@@ -314,7 +314,6 @@
   cursor: pointer;
 }
 
-
 .pj-internal-subnav a:last-of-type, .pj-internal-subnav div:last-of-type{
   text-align: left;
   padding-left: 16px;
@@ -323,7 +322,6 @@
 .pj-internal-subnav a:first-of-type, .pj-internal-subnav div:first-of-type{
   border-right: 1px solid #000;
 }
-
 
 .close-section-btn{
     width: 20px;
@@ -366,7 +364,6 @@
 .cat_close:hover div span:last-of-type, .close-section-btn:focus .cat_close div span:last-of-type{
   transform: translate(-2px, 9px) rotate(-15deg);
 }
-
 
 .pj-internal-content{
   transition: none;
@@ -479,7 +476,7 @@
     flex-wrap: wrap;
     align-items: center;
     overflow:hidden !important;
-    background: linear-gradient(to bottom, #fff 50%, #EDEDED 100%);
+    background: linear-gradient(to bottom, #fff 50%, #f2f4f4 100%);
     border-right: 6px solid transparent;
     transition: all 0.5s linear !important; 
   }
