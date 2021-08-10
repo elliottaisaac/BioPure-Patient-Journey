@@ -3,8 +3,16 @@
 
 @import url(site-styles.css);
 
+.pj-content h1{
+  color: #004081;
+}
+
 .pj-introtext{
   font-family: 'Open Sans', sans-serif;
+}
+
+#pj-page p{
+  color: #4F4F4F;
 }
 
 .patient-journey{
@@ -86,6 +94,7 @@
     font-family: ff-meta-correspondence-web-p, sans-serif;
     text-transform: uppercase;
     width: 100%;
+    color: #004081;
 }
 
 .pj-gradient{
@@ -153,7 +162,7 @@
 }
 
 .pj-internal-sidebar{
-  background-color: #EDEDED;
+  background-color: #f2f4f4;
   grid-area: 1 / 1 / 2 / 2;
   height: 100%;
   padding: 48px 32px;
@@ -169,16 +178,18 @@
 }
 
 .pj-internal-sidebar a:not(.pj-internal-subnav a){
-  background-color: #00A0DF;
-  padding: 12px;
-  width: 150px;
+  background-color: #4EB7F2;
+  padding: 4px 16px;
+  width: max-content;
+  max-width: 100%;
   display: block;
   border-radius: 32px;
   text-align: center;
-  margin-left: calc(50% - 75px);
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 32px;
   color: #072E5C;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   font-weight: bold;
   transition: all 0.125s linear;
@@ -189,9 +200,8 @@
   font-family: 'Open Sans', sans-serif;
 }
 .pj-internal-sidebar a:hover{
-  color: #fff;
-  background-color: #072E5C;
-  
+  color: #fff !important;
+  background-color: #004081 !important;
 }
 
 .pj-internal-content.fade-in *{
@@ -225,6 +235,7 @@
   font-weight: bold;
   text-transform: capitalize;
   margin-bottom: 24px;
+  color: #004081;
 }
 
 .pj-internal-main h3 img{
@@ -236,8 +247,34 @@
   font-size: 16px;
   font-weight: bold;
   text-transform: capitalize;
-  margin-bottom: 12px;
+  margin-bottom: 0;
   font-family: 'Open Sans', sans-serif;
+  color: #004081;
+}
+
+.pj-internal-main p{
+  margin-bottom: 0.5rem;
+}
+
+.pj-internal-main p a{
+  color: #4EB7F2;
+}
+.pj-internal-main p a:hover{
+  color: #4EB7F2;
+  text-decoration: underline;
+}
+
+.pj-internal-main ul{
+  margin-left: 16px;
+}
+.pj-internal-main ul li::before {
+  content: "▪"; 
+  color: #4EB7F2;
+  display: inline-block; 
+  width: 1em; 
+  margin-left: -1em; 
+  top: -1px;
+  position: relative;
 }
 
 .pj-internal-subnav{
@@ -253,7 +290,7 @@
   font-size: 16px;
   font-weight: bold;
   text-transform: capitalize;
-  color: var(--primary-color);
+  color: #004081;
   text-align: right;
   padding-right: 16px;
   padding-bottom: 6px;
@@ -270,7 +307,7 @@
   letter-spacing: 2px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #00A0DF;
+  color: #4EB7F2;
   text-align: right;
   padding-right: 16px;
   padding-bottom: 8px;
@@ -309,7 +346,7 @@
 .close-section-btn div span{
     width: 24px;
     height: 4px;
-    background-color: #072E5C;
+    background-color: #004081;;
     position: absolute;
     transition: all 250ms ease-out;
 }

@@ -39,7 +39,6 @@ function ActivateGrid(){
         sections[i].appendChild(h2);
         sections[i].appendChild(icon);
         let gridTemplate = "";
-        let gradientString = "";
         for(let j = 1; j <= i; j++) gridTemplate += "60px ";
         gridTemplate += "auto";
         for(let k = i + 1; k < sections.length; k++) gridTemplate += " 60px";
@@ -54,12 +53,13 @@ function ActivateGrid(){
                     else sections[a].style.height = "60px";
                 }
                 let gradient = ["#2c9942 ","#fce200 ","#f18a00 ","#e12518 ","#df1683 ","#a25eb5 ","#004987 ","#5eb3e4 "];
-                if(isMobile) gradientString = gradientString;
+                let gradientString;
+                if(isMobile) gradientString = "";
                 else{
                     let gradientCountingUp = 30;
-                    for(let k = 0; k <= index; k++){
-                        gradient[k] = `${gradient[k]}${gradientCountingUp}px`;
-                        if(k == index) gradient[k] += `, ${gradient[k].substring(0,7)} `;
+                    for(let p = 0; p <= index; p++){
+                        gradient[p] = `${gradient[p]}${gradientCountingUp}px`;
+                        if(p == index) gradient[p] += `, ${gradient[p].substring(0,7)} `;
                         gradientCountingUp += 60;
                     }
                     let gradientCountingDown = vw - 30;
@@ -211,7 +211,7 @@ function CheckLocalStorage(){
     if(localStorage.getItem("OPENCAT")){
         let oc = sections[parseInt(localStorage.getItem("OPENCAT"))];
         oc.click();
-        setTimeout( () => { window.scrollTo(0, oc.getBoundingClientRect().top + oc.ownerDocument.defaultView.pageYOffset - 18); }, 200);
+        setTimeout( () => { window.scrollTo(0, oc.getBoundingClientRect().top + oc.ownerDocument.defaultView.pageYOffset - 18); }, 500);
         log(oc.getBoundingClientRect().top + oc.ownerDocument.defaultView.pageYOffset - 18);
         localStorage.clear();
     }
