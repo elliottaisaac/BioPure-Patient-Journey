@@ -28,10 +28,8 @@ function ActivateGrid(){
             s.setAttribute("tabindex", "0");
         });
         window.addEventListener("keyup", (e) => {
-            if(e.keyCode == 13){
-                document.activeElement.click();
-            }
-        })
+            if(e.keyCode == 13) document.activeElement.click();
+        });
         sections[i].style.width = `${vw/sections.length}px`;
         let h2 = NewElement("h2", false, false);
         let icon = NewElement("img", ["plus-icon"], false);
@@ -114,8 +112,7 @@ function RenderInternalContent(category){
     NewElement("p", [], qs(".pj-internal-main h4:nth-of-type(2)"));
     qs(".pj-internal-main p:nth-of-type(2)").innerHTML = fields.categories[category - 1].paragraphText2;
     NewElement("div", ["close-section-btn"], qs(".pj-internal-main"));
-    let closeButton = `<div class="cat_close"><div class="close-inner"><span></span><span></span></div></div>`;
-    qs(".close-section-btn").innerHTML = closeButton;
+    qs(".close-section-btn").innerHTML = `<div class="cat_close"><div class="close-inner"><span></span><span></span></div></div>`;
     qs(".close-section-btn").setAttribute("tabindex", "0");
     ael(qs(".close-section-btn"), "click", CloseCategory);
     let subNav, r;
@@ -142,8 +139,8 @@ function RenderInternalContent(category){
     if(isMobile){
         snc[0].innerHTML = snc[0].innerHTML.substring(2); 
         snc[1].innerHTML = snc[1].innerHTML.substring(0, snc[1].innerHTML.length - 1);
-        snc[2].innerHTML = "← Previous";
-        snc[3].innerHTML = "Next →";
+        snc[2].innerHTML = "&#8592; Previous";
+        snc[3].innerHTML = "Next &#8594;";
         grid.classList.add("grayscale-bg");
         qs(".patient-journey").style.paddingBottom = "300px";
     }
@@ -164,7 +161,6 @@ function RenderInternalContent(category){
         g: parseInt(hextorbg[2], 16),
         b: parseInt(hextorbg[3], 16)
       } : null;
-    let rbga = `rbga(${rbg.r},${rbg.g},${rbg.b},0.5)`;
     sections.forEach(s => {
         if(!isMobile){
             s.style.transition = "width 0.65s linear";
@@ -183,10 +179,11 @@ function RenderInternalContent(category){
 function CloseCategory(){
     grid.classList.remove("vertical-text");
     qs(".pj-gradient").style.background = "linear-gradient(to right, #2c9942 6.25%, #fce200 18.75%, #f18a00 31.25%, #e12518 43.75%, #df1683 56.25%, #a25eb5 68.75%, #004987 81.25%, #5eb3e4 93.75%, #2c9942 106.25%)";
-    if(!isMobile) for(let i = 0; i < sections.length; i++){sections[i].style.width = `initial !important`; }
-    //else for(i = 0; i < sections.length; i++) sections[i].style.background = "linear-gradient(to right, rgba(255, 255, 255, 1.0) 0%, rgba(255, 255, 255, 0.5) 75%, rgba(255, 255, 255, 0.0) 100%);";
-    if(!isMobile) grid.style.gridTemplateColumns = "1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr";
-    if(!isMobile) sections.forEach(s => { s.style.width = `${vw/sections.length}px`;});
+    if(!isMobile) {
+        for(let i = 0; i < sections.length; i++){sections[i].style.width = `initial !important`; }  
+        grid.style.gridTemplateColumns = "1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr";
+        sections.forEach(s => { s.style.width = `${vw/sections.length}px`;});
+    }
     else sections.forEach(s => { s.style.height = "60px";});
     if(qs(".pj-internal-content")) qs(".pj-internal-content").remove();
     if(isMobile){

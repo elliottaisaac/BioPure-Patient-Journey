@@ -178,7 +178,7 @@
 }
 
 .pj-internal-sidebar a:not(.pj-internal-subnav a){
-  background-color: #4EB7F2;
+  background-color: #00A0DF;
   padding: 4px 16px;
   width: max-content;
   max-width: 100%;
@@ -332,7 +332,7 @@
     outline: none;
     cursor: pointer;
     padding: 12px;
-    z-index: 9999;
+    z-index: 99;
     left: 92%;
     top: 24px;
 }
@@ -345,7 +345,7 @@
 .close-section-btn div span{
     width: 24px;
     height: 4px;
-    background-color: #004081;;
+    background-color: #004081;
     position: absolute;
     transition: all 250ms ease-out;
 }
@@ -369,21 +369,6 @@
   transition: none;
   background-color: #fff;
 } 
-
-.footer-spacer{
-  display: none;
-}
-
-@media screen and (min-width: 1500px){
-  .footer-spacer{
-    display: block;
-    height: 200px;
-    width: 100vw;
-    background: #fff;
-    position: relative;
-    z-index: 34;
-  }
-}
 
 @media screen and (min-width: 1200px){
   *{
