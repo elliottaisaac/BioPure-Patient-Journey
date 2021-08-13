@@ -196,7 +196,6 @@
   border: 1px solid transparent;
   cursor: pointer;
   pointer-events: all;
-  color: #fff !important;
   font-family: 'Open Sans', sans-serif;
 }
 .pj-internal-sidebar a:hover{
