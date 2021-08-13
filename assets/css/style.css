@@ -268,7 +268,7 @@
   margin-left: 16px;
 }
 .pj-internal-main ul li::before {
-  content: "▪"; 
+  content: "\25AA"; 
   color: #4EB7F2;
   display: inline-block; 
   width: 1em; 
@@ -584,5 +584,12 @@
   .pj-internal-subnav a:first-of-type, .pj-internal-subnav div:first-of-type{
     text-align: center;
     padding-left: 16px;
+  }
+
+  .pj-internal-main ul li{
+    list-style-type: disc;
+  }
+  .pj-internal-main ul li::before {
+    display: none;
   }
 }
