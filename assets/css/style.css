@@ -178,8 +178,8 @@
 }
 
 .pj-internal-sidebar a:not(.pj-internal-subnav a){
-  background-color: #00A0DF;
-  padding: 16px 24px;
+  background-color: #004081;
+  padding: 6px 12px;
   width: max-content;
   max-width: 100%;
   display: block;
@@ -188,8 +188,8 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 32px;
-  color: #072E5C;
-  letter-spacing: 1px;
+  color: #fff;
+  letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: bold;
   transition: all 0.125s linear;
@@ -197,10 +197,10 @@
   cursor: pointer;
   pointer-events: all;
   font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
 }
 .pj-internal-sidebar a:hover{
-  color: #fff !important;
-  background-color: #004081 !important;
+  transform: scale(1.0875);
 }
 
 .pj-internal-content.fade-in *{

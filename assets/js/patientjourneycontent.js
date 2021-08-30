@@ -18,7 +18,7 @@ const fields = {
             paragraphText1: "I'm paragraph text, edit me and all other content in the assets/js/patientjourneycontent.js file Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             headline2: "Headline Two",
             paragraphText2: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-            image: "assets/img/testing.png",
+            image: "assets/img/Organ_detox_support.png",
             sidebarText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             buttonText: "Shop our store",
             buttonLink: "https://biopurecustomer.myshopify.com/"
@@ -31,7 +31,7 @@ const fields = {
             paragraphText1: "I'm paragraph text, edit me and all other content in the assets/js/patientjourneycontent.js file. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             headline2: "Binders headline two ipsum",
             paragraphText2: "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatr adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            image: "assets/img/test2.png",
+            image: "assets/img/Binders.png",
             sidebarText: "Binders lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             buttonText: "Shop all",
             buttonLink: "https://biopurecustomer.myshopify.com/"
@@ -44,7 +44,7 @@ const fields = {
             paragraphText1: "I'm paragraph text, edit me and all other content in the assets/js/patientjourneycontent.js file. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             headline2: "etox Support internal headli ipsum",
             paragraphText2: "R adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatr adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            image: "assets/img/test3.png",
+            image: "assets/img/Environmental_support.png",
             sidebarText:  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             buttonText: "Shop all Products",
             buttonLink: "https://biopurecustomer.myshopify.com/"
@@ -57,7 +57,7 @@ const fields = {
             paragraphText1: "I'm paragraph text, edit me and all other content in the assets/js/patientjourneycontent.js file. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi, tempor incidiectetur adipiscing elit, sed do eiusmod tempor incidiectetur.",
             headline2: "Gastrointestinal",
             paragraphText2: "Sit amet ut enim ad minim <a href='#'>veniam</a>!<ul><li>Promotes Wellness</li><li>Promotes a Overall wellness and fabulous breathing. The second line tabs in to line up vertically</li><li>Supports Oral Dentine</li></ul>",
-            image: "assets/img/test4.png",
+            image: "assets/img/Gastrointestinal_support.png",
             sidebarText: "Super cool lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             buttonText: "Shop Gastrointestinal Support",
             buttonLink: "https://biopurecustomer.myshopify.com/"
@@ -70,7 +70,7 @@ const fields = {
             paragraphText1: "I'm paragraph text, edit me and all other content in the assets/js/patientjourneycontent.js file.  sum dolor sit amet, consectetur adipiscing elit, t Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiu",
             headline2: "Psum Dolor Sit ",
             paragraphText2: "Consectetur adipiscing elit. Ut enim ad minim veniam, sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            image: "assets/img/test5.png",
+            image: "assets/img/Immune_support.png",
             sidebarText: "This is different Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             buttonText: "Shop all",
             buttonLink: "https://biopurecustomer.myshopify.com/"
@@ -83,7 +83,7 @@ const fields = {
             paragraphText1: "I'm paragraph text, edit me and all other content in the assets/js/patientjourneycontent.js file. psum lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut  psum lorem ipsum dolor sit amet, consectetur adipiscing elit",
             headline2: "Do eiusmod tempor i",
             paragraphText2: "Ectetur adipiscing elit, sed do eiusmod tempor incidiectetur adipiscing elit, sed do eiusmod tempor incidiectetur adipiscing elit, sed do eiusmod tempor incidi",
-            image: "assets/img/test6.png",
+            image: "assets/img/Dental_support.png",
             sidebarText: "Ipsum lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             buttonText: "Shop Dental Support Products",
             buttonLink: "https://biopurecustomer.myshopify.com/"
@@ -96,7 +96,7 @@ const fields = {
             paragraphText1:"I'm paragraph text, edit me and all other content in the assets/js/patientjourneycontent.js file. Neurological adipiscing elit, sed do eiusmod tempor incididunt ut labore",
             headline2: "Neurological two",
             paragraphText2: "Labore et dolore magna aliqua. Ut  psum lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            image: "assets/img/test7.png",
+            image: "assets/img/Neurological_support.png",
             sidebarText: "Lorem different ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             buttonText: "Shop all Neurological Support",
             buttonLink: "https://biopurecustomer.myshopify.com/"
@@ -109,7 +109,7 @@ const fields = {
             paragraphText1: "I'm paragraph text, edit me and all other content in the assets/js/patientjourneycontent.js file. etur adipiscing elit, Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. etur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             headline2: "Foundational incididunt",
             paragraphText2: "Rem ipsum dolor sit amet, consectetur adipiscing elit, s",
-            image: "assets/img/test8.jpg",
+            image: "assets/img/Foundational_Support.png",
             sidebarText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             buttonText: "Shop all",
             buttonLink: "https://biopurecustomer.myshopify.com/"
